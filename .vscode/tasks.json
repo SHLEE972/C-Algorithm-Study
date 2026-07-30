@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ 활성 파일 빌드",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++20",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "알고리즘 학습용 C++20 현재 파일 빌드"
+        }
+    ],
+    "version": "2.0.0"
+}
